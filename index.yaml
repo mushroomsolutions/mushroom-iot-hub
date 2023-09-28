@@ -1,0 +1,36 @@
+apiVersion: v1
+entries:
+  mushroom-iot-hub:
+  - apiVersion: v2
+    appVersion: 0.9.14
+    created: "2023-09-27T23:09:39.9412329+05:30"
+    dependencies:
+    - condition: _000_commonConfig.datastorage.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.9.0
+    - condition: _000_commonConfig.datastorage.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.52.4
+    - condition: _000_commonConfig.datastorage.enabled
+      name: timescaledb-single
+      repository: https://charts.timescale.com/
+      version: 0.26.9
+    - condition: _000_commonConfig.infrastructure.kafka.enabled
+      name: redpanda
+      repository: https://charts.redpanda.com/
+      version: 3.0.9
+    description: Transform manufacturing with UMH Systems united-manufacturing-hub
+      Helm chart, simplifying access to powerful technology for engineers.
+    digest: 1cb5ae0e10c28d3366b30b915398b1c81d17751c11adc46e1e8e51cddfdfdf4f
+    home: https://www.umh.app
+    icon: https://avatars.githubusercontent.com/u/77492553
+    name: mushroom-iot-hub
+    sources:
+    - https://github.com/mushroomsolutions/mushroom-iot-hub
+    type: application
+    urls:
+    - mushroom-iot-hub-0.9.14.tgz
+    version: 0.9.14
+generated: "2023-09-27T23:09:39.9048795+05:30"
